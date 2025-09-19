@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="icon" type="image/x-icon" href="./assets/icon/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <section class="todo">
+        <h2 class="hdr">To-Do List : </h2>
+        <div class="input">
+            <input 
+                type="text"
+                class="input-field"
+                id="todoInput" 
+                placeholder="Add a new To-do"
+                maxlength="80"
+            />
+            <button class="btn">Add</button>
+        </div>
+
+        <div class="scroll-wrapper">
+            <ul id="todoList" class="scroll-content">
+            </ul>
+            <div class="custom-scrollbar-track">
+                <div class="custom-scrollbar-thumb"></div>
+            </div>
+        </div>
+        
+        <div>
+            <hr class="counter">
+            <div class="counter-container">
+                <p id="task-summary"></p>
+                <button id="deleteButton">Delete All</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+    <div class ="footer">
+        <p class="made-by">made by</p>
+        <a href="https://github.com/iif7ex" target="_blank" class="author-link">
+            <p class="author">peakaru</p>
+        </a>
+    </div>
+    </footer>
+</body>
+</html>
